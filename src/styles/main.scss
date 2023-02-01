@@ -1,0 +1,11 @@
+@import "./colors";
+@import "./helpers";
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}

@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 4rem;
+  }
+  .nav {
+    nav {
+      padding: 1rem 1rem;
+    }
+  }
+
+  .features_inner {
+    .features_flexbox_inner {
+      .white_box {
+        &_inner {
+          width: 23rem;
+          height: 9rem;
+          gap: 0rem;
+
+          .left_side_box {
+            .circle {
+              display: none;
+            }
+          }
+
+          .bottom_text {
+            padding: 0;
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    padding: 0;
+  }
+
+  // NAV
+
+  .nav {
+    nav {
+      padding: 1rem 0;
+      justify-content: space-evenly;
+
+      .items {
+        ul {
+          &.nav_list {
+            gap: 1rem;
+          }
+        }
+      }
+    }
+    .top_nav_inner {
+      padding: 0.5rem 2rem;
+    }
+  }
+
+  // HERO
+  .hero_left_side {
+    &_inner {
+      padding: 0;
+      position: relative;
+      inset: 0 -9rem;
+    }
+  }
+
+  .learning_system {
+    &_inner {
+      flex-direction: column;
+
+      .system {
+        &_left_side {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .features_inner {
+    .features_flexbox_inner {
+      position: relative;
+      inset: 0 -4rem;
+      .white_box {
+        &_inner {
+          width: 20rem;
+
+          .left_side_box {
+            .circle {
+              display: none;
+            }
+          }
+
+          .bottom_text {
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+
+  .more_about_inner {
+    padding: 3rem;
+    .more_about_right {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 700px) {
+  .nav {
+    nav {
+      .items {
+        ul {
+          &.nav_list {
+            gap: 0rem;
+          }
+        }
+      }
+    }
+    .top_nav {
+      height: 4.5rem;
+      &_inner {
+        padding: 0.5rem 0rem;
+
+        .left_top_nav {
+          gap: 0.5rem;
+        }
+
+        .right_top_nav {
+          gap: 0;
+        }
+      }
+    }
+  }
+
+  //
+
+  .features_inner {
+    .features_text {
+      p {
+        padding: 0;
+      }
+    }
+    .features_flexbox_inner {
+      .white_box {
+        &_inner {
+          width: 17rem;
+
+          .left_side_box {
+            .circle {
+              display: none;
+            }
+          }
+
+          .bottom_text {
+            width: 20rem;
+          }
+        }
+      }
+    }
+  }
+}

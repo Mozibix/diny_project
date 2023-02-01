@@ -1,0 +1,71 @@
+@import "./colors";
+@import "./helpers";
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.more_about {
+  &_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 7rem 0 0 15rem;
+    .more_about {
+      &_left {
+        &_inner {
+          .bold_text {
+            p {
+              width: 28rem;
+              font-family: Lato;
+              font-size: 40px;
+              font-weight: 700;
+              line-height: 46px;
+              letter-spacing: 0em;
+              text-align: left;
+            }
+          }
+
+          .light_text {
+            p {
+              width: 23rem;
+            }
+          }
+          .list_items {
+            ul {
+              li {
+                font-family: Lato;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $list_items;
+              }
+            }
+          }
+
+          button {
+            margin-block: 1rem;
+          }
+        }
+      }
+
+      &_right {
+        background: rgba(0, 52, 18, 0.48);
+        overflow: hidden;
+        border-bottom-left-radius: 3rem;
+        img {
+          z-index: -5;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@import "./colors";
+@import "./helpers";
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.hero {
+  &_inner {
+    img {
+      width: 100%;
+      height: 76.5vh;
+    }
+
+    .hero_left_side {
+      z-index: 5;
+      position: absolute;
+      top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      left: 0;
+
+      &_inner {
+        width: 38rem;
+        padding: 7.5rem 0 0 10rem;
+      }
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+
+    .transparent_box {
+      position: absolute;
+      z-index: 10;
+      bottom: 0;
+      height: 4rem;
+      width: 100%;
+      background: rgba(0, 52, 18, 0.35);
+      backdrop-filter: blur(16.5px);
+    }
+  }
+}
