@@ -1,5 +1,6 @@
 import React from "react";
 import findout_img from "../images/findout.png";
+import play from "../images/play.svg";
 import "../styles/findout.scss";
 
 export const FindOut = () => {
@@ -24,8 +25,9 @@ export const FindOut = () => {
           <div className="find_out_image">
             <div className="image_box">
               <img src={findout_img} alt="find out" />
-              <div className="circle"></div>
-              <div className="play"></div>
+            </div>
+            <div className="play">
+              <img src={play} alt="play" />
             </div>
           </div>
         </div>

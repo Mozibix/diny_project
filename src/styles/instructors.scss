@@ -47,21 +47,35 @@
       .img_box {
         &_info {
           position: absolute;
-          bottom: 3rem;
+          width: 100%;
+          bottom: 0;
           font-family: Lato;
           font-size: 16px;
           font-weight: 700;
           line-height: 24px;
-          margin-left: 1.5rem;
+          padding-left: 1.5rem;
+          padding-bottom: 1rem;
           letter-spacing: 0em;
           text-align: left;
           color: $white;
+          background: linear-gradient(
+            180deg,
+            rgba(3, 140, 51, 0) 22.57%,
+            rgba(3, 140, 51, 0.497159) 77.2%,
+            #038c33 100%
+          );
 
           .qualification {
             margin: 0.2rem 0;
             p {
               width: 14rem;
             }
+          }
+
+          .date {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
           }
         }
       }

@@ -14,7 +14,7 @@
   &_inner {
     img {
       width: 100%;
-      height: 76.5vh;
+      height: 77vh;
     }
 
     .hero_left_side {
@@ -29,7 +29,17 @@
 
       &_inner {
         width: 38rem;
-        padding: 7.5rem 0 0 10rem;
+        padding: 5rem 0 0 10rem;
+
+        @media screen and (max-width: 1200px) {
+          width: 100%;
+        }
+        @media screen and (max-width: 500px) {
+          width: 90%;
+          padding: 0;
+          position: relative;
+          inset: 1rem 0;
+        }
       }
     }
 

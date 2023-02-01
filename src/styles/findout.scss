@@ -26,7 +26,6 @@
       }
 
       &_quotes {
-        margin-bottom: 3rem;
         p {
           color: $list_items;
           padding: 0 21rem;
@@ -34,12 +33,26 @@
       }
 
       &_image {
+        margin: 0;
+        padding: 0;
+        .play {
+          img {
+            position: absolute;
+            top: -20rem;
+            left: 38rem;
+            z-index: 100;
+            width: 10rem;
+            height: 10rem;
+            // display: none;
+          }
+        }
         .image_box {
           background: rgba(3, 140, 51, 0.76);
           margin: 0 16rem;
           overflow: hidden;
-          height: 24rem;
+          height: 30rem;
           img {
+            height: 33rem;
             width: 100%;
             opacity: 0.5;
           }

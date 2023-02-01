@@ -47,6 +47,9 @@
                 letter-spacing: 0em;
                 text-align: left;
                 color: $list_items;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
               }
             }
           }

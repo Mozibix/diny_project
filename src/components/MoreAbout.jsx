@@ -1,5 +1,6 @@
 import React from "react";
 import more_about_img from "../images/more-about-img";
+import checkbox from "../images/checkbox.svg";
 import "../styles/moreabout.scss";
 
 export const MoreAbout = () => {
@@ -24,17 +25,17 @@ export const MoreAbout = () => {
               <div className="list_items">
                 <ul>
                   <li>
-                    {" "}
-                    <input type="checkbox" checked /> Culture in diversity
+                    <img src={checkbox} alt="checkbox" />{" "}
+                    <p> Culture in diversity</p>
                   </li>
                   <li>
-                    {" "}
-                    <input type="checkbox" checked /> We have built hospitals,
+                    <img src={checkbox} alt="checkbox" />{" "}
+                    <p> We have built hospitals,</p>
                     arranged doctor.
                   </li>
                   <li>
-                    {" "}
-                    <input type="checkbox" checked /> We have built hospitals,
+                    <img src={checkbox} alt="checkbox" />{" "}
+                    <p> We have built hospitals,</p>
                     arranged doctor.
                   </li>
                 </ul>

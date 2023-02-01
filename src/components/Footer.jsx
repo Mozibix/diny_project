@@ -1,4 +1,9 @@
 import React from "react";
+import logo from "../images/logo.svg";
+import twitter from "../images/twitter.svg";
+import facebook from "../images/facebook.svg";
+import linkedin from "../images/linkedin.svg";
+import cursor from "../images/cursor.svg";
 import "../styles/footer.scss";
 
 export const Footer = () => {
@@ -7,7 +12,7 @@ export const Footer = () => {
       <footer>
         <div className="footer_inner">
           <div className="logo_sec">
-            <img src="" alt="" />
+            <img src={logo} alt="logo" />
 
             <div className="logo_quotes">
               <p>
@@ -53,7 +58,7 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          {/* // // */}
+          {/*  */}
           <div className="footer_details">
             <div className="footer_details_inner">
               <div className="header_sec">
@@ -63,18 +68,26 @@ export const Footer = () => {
 
               <div className="footer_items">
                 <p>Sign up to newsletter to get Latest updates</p>
-                <div className="input_sec">
+                <div className="footer_input_sec">
                   <input
                     type="email"
                     placeholder="Enter Email address"
                     name="email"
                   />
-                  <div className="icon_click"></div>
+                  <div className="icon_click">
+                    <img src={cursor} alt="cursor" />
+                  </div>
                 </div>
-                <ul>
-                  <li>icon</li>
-                  <li>icon</li>
-                  <li>icon</li>
+                <ul className="footer_icons">
+                  <li>
+                    <img src={facebook} alt="facebook" />
+                  </li>
+                  <li>
+                    <img src={twitter} alt="twitter" />
+                  </li>
+                  <li>
+                    <img src={linkedin} alt="linkedin" />
+                  </li>
                 </ul>
               </div>
             </div>
@@ -85,7 +98,7 @@ export const Footer = () => {
         <div className="bottom_line"></div>
 
         <div className="bottom_footer_text">
-          <p>Copywright @ 2020 Dinnygreen international</p>
+          <p>Copyright @ 2020 Dinnygreen international</p>
         </div>
       </footer>
     </>

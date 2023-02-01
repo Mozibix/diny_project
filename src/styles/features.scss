@@ -14,9 +14,11 @@
   background: $primary;
   mix-blend-mode: normal;
   opacity: 0.86;
+  overflow: hidden;
+  height: 98vh;
   img {
-    width: 100%;
     height: 100vh;
+    width: 100%;
     z-index: -5;
     opacity: 0.3;
     mix-blend-mode: normal;
@@ -26,7 +28,7 @@
     top: 0;
     left: 0;
     text-align: center;
-    margin: 2rem 4rem;
+    margin: 4rem;
 
     .features_header {
       margin: 0.5rem 0;
@@ -50,13 +52,13 @@
       &_flexbox {
         &_inner {
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: 35rem 35rem;
           gap: 1.5rem;
 
           .white_box {
             &_inner {
               padding: 0 2rem;
-              width: 34rem;
+              width: 100%;
               height: 10rem;
               background: $light_text;
               display: flex;
