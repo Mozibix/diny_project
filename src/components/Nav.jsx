@@ -1,8 +1,15 @@
-import React from "react";
+import { useState, React } from "react";
 import logo from "../images/logo.svg";
+import Hamburger from "./HamBurger";
 import "../styles/nav.scss";
 
 export const Nav = () => {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);
+  };
+
   return (
     <>
       <div className="nav">
@@ -38,6 +45,10 @@ export const Nav = () => {
           </div>
 
           <button className="btn_primary btn_s">Contact</button>
+
+          <div className="hamburger" onClick={toggleHamburger}>
+            <Hamburger isOpen={hamburgerOpen} />
+          </div>
         </nav>
       </div>
     </>

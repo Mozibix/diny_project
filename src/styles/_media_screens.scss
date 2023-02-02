@@ -1,3 +1,6 @@
+@import "./colors";
+@import "./helpers";
+
 * {
   margin: 0;
   padding: 0;
@@ -10,18 +13,18 @@
 @media screen and (max-width: 1200px) {
   .nav {
     nav {
-      padding: 1rem 1rem;
+      // padding: 1rem 1rem;
     }
   }
 
   .features_inner {
-    margin: 1rem;
     .features_flexbox_inner {
-      grid-template-columns: 45% 45%;
+      gap: 0.5rem;
+      margin: 0;
       .white_box {
+        width: 90%;
         &_inner {
-          width: 90%;
-
+          width: 100%;
           .bottom_text {
             padding: 0;
             width: 20rem;
@@ -123,7 +126,14 @@
     }
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
+  .nav {
+    nav {
+      padding: 1rem 3rem;
+    }
+  }
+}
+@media screen and (max-width: 950px) {
   .container {
     padding: 0;
   }
@@ -150,11 +160,10 @@
 
   // HERO
   .hero_left_side {
-    display: none;
     &_inner {
       padding: 0;
       position: relative;
-      inset: 0 -9rem;
+      // inset: 0 -9rem;
     }
   }
 
@@ -171,20 +180,17 @@
   }
 
   .features_inner {
-    margin: 2rem 1rem;
-
     .features_text {
       width: 100%;
     }
     .features_flexbox_inner {
-      margin: 2rem 0;
       .white_box {
+        width: 80%;
         &_inner {
-          width: 20rem;
-
+          width: 100%;
           .left_side_box {
             .circle {
-              display: none;
+              // display: none;
             }
           }
 
@@ -240,35 +246,28 @@
   //   }
   // }
 }
-@media screen and (max-width: 750px) {
-  .container {
-    padding: 0 1rem;
-    margin: 0;
-    width: 100%;
-  }
+@media screen and (max-width: 768px) {
   .nav {
     nav {
-      gap: 10rem;
       .items {
-        display: none;
         ul {
           &.nav_list {
-            gap: 0rem;
+            gap: 1.5rem;
           }
         }
       }
     }
     .top_nav {
-      height: 4.5rem;
+      // height: 4.5rem;
       &_inner {
-        padding: 0.5rem 0rem;
+        padding: 0.5rem 3rem;
 
         .left_top_nav {
-          gap: 0.5rem;
+          gap: 1.5rem;
         }
 
         .right_top_nav {
-          gap: 0;
+          gap: 1rem;
         }
       }
     }
@@ -286,14 +285,14 @@
     .features_flexbox_inner {
       .white_box {
         &_inner {
-          margin: 0.1rem;
-          width: 14rem;
-          padding: 0.2rem;
-          gap: 0.1rem;
+          // margin: 0.1rem;
+          // width: 14rem;
+          // padding: 0.2rem;
+          // gap: 0.1rem;
 
           .left_side_box {
             .circle {
-              display: none;
+              // display: none;
             }
           }
 
@@ -379,6 +378,79 @@
     display: grid;
     .footer_inner {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding-inline: 2rem;
+
+      .items {
+        ul {
+          &.nav_list {
+            display: none;
+          }
+        }
+      }
+      button {
+        display: none;
+      }
+      .hamburger {
+        all: unset;
+        display: block;
+        z-index: 10;
+
+        .burger {
+          margin-bottom: 0.4rem;
+        }
+      }
+    }
+    .top_nav {
+      // TODO HAMBURGER MENU
+      display: none;
+      &_inner {
+        // padding: 0.5rem 3rem;
+
+        .left_top_nav {
+          gap: 1.5rem;
+        }
+
+        .right_top_nav {
+          gap: 1rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .nav {
+    nav {
+      .items {
+        ul {
+          &.nav_list {
+            display: none;
+          }
+        }
+      }
+    }
+    .top_nav {
+      // TODO HAMBURGER MENU
+      display: none;
+      &_inner {
+        padding: 0.5rem 3rem;
+
+        .left_top_nav {
+          gap: 1.5rem;
+        }
+
+        .right_top_nav {
+          gap: 1rem;
+        }
+      }
     }
   }
 }

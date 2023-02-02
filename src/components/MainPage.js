@@ -49,13 +49,16 @@ const MainPage = () => {
               </section>
 
               {/* FIND OUT SECTION */}
-              <FindOut />
+              <section className="find_out_sec">
+                <FindOut />
+              </section>
 
               {/* STORIES */}
               <section className="stories_sec">
                 <Stories />
               </section>
 
+              {/* INSTRUCTORS */}
               <section className="instructors_sec">
                 <Instructors />
               </section>

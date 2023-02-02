@@ -30,6 +30,16 @@
     text-align: center;
     margin: 4rem;
 
+    @media screen and (max-width: 1040px) {
+      margin: 2rem;
+    }
+    @media screen and (max-width: 960px) {
+      margin: 1rem;
+    }
+    @media screen and (max-width: 960px) {
+      margin: 0.5rem;
+    }
+
     .features_header {
       margin: 0.5rem 0;
       p {
@@ -45,17 +55,52 @@
         color: $light-text;
         text-align: center;
         padding: 0 16rem;
+
+        @media screen and (max-width: 1000px) {
+          padding: 0 6rem;
+        }
       }
     }
 
     .features {
+      width: 100%;
+      padding: 0;
       &_flexbox {
         &_inner {
           display: grid;
-          grid-template-columns: 35rem 35rem;
-          gap: 1.5rem;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 1.5rem 1.5rem;
+          width: 100%;
+          @media screen and (max-width: 1020px) {
+            gap: 0.2rem;
+          }
 
+          @media screen and (max-width: 875px) {
+            gap: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 0;
+          }
+          @media screen and (max-width: 408px) {
+            all: unset;
+            width: 100%;
+          }
           .white_box {
+            @media screen and (max-width: 408px) {
+              position: relative;
+              inset: 0 1.5rem;
+              margin-bottom: 0.5rem;
+            }
+            @media screen and (max-width: 375px) {
+              width: 100%;
+              inset: 0 2rem;
+            }
+            @media screen and (max-width: 1000px) {
+            }
+            @media screen and (max-width: 1000px) {
+            }
+
             &_inner {
               padding: 0 2rem;
               width: 100%;
@@ -66,12 +111,29 @@
               align-items: center;
               gap: 2rem;
 
+              @media screen and (max-width: 1020px) {
+                gap: 0.5rem;
+              }
+              @media screen and (max-width: 1000px) {
+                width: 70%;
+              }
+              @media screen and (max-width: 408px) {
+                width: 10%;
+              }
+
+              @media screen and (max-width: 375px) {
+                width: 10rem;
+                padding: 0;
+              }
               .left_side_box {
                 .circle {
                   width: 5rem;
                   height: 5rem;
                   border: 2px dashed #ff0000;
                   border-radius: 50%;
+                  @media screen and (max-width: 485px) {
+                    display: none;
+                  }
                 }
               }
 

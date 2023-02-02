@@ -9,3 +9,35 @@
   list-style: none;
   text-decoration: none;
 }
+
+.main_container {
+  section {
+    &.learning_system_sec {
+      display: block;
+    }
+    &.features_sec {
+      display: block;
+    }
+    &.more_about_sec {
+      display: none;
+    }
+    &.classes_sec {
+      display: none;
+    }
+    &.find_out_sec {
+      display: none;
+    }
+    &.stories_sec {
+      display: none;
+    }
+    &.instructors_sec {
+      display: none;
+    }
+    &.contact_us_sec {
+      display: none;
+    }
+    &.footer_sec {
+      display: none;
+    }
+  }
+}

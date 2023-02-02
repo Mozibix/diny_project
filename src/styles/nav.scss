@@ -50,7 +50,13 @@
     align-items: center;
     background: $bold_primary;
     color: $white;
+    width: 100%;
 
+    @media screen and (max-width: 700px) {
+      // padding: 0;
+      // margin: 0;
+      // justify-content: center;
+    }
     .items {
       ul {
         &.nav_list {
@@ -68,6 +74,11 @@
           }
         }
       }
+    }
+
+    .hamburger {
+      display: none;
+      z-index: 10;
     }
   }
 }
