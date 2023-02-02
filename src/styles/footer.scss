@@ -19,6 +19,10 @@ footer {
   @media screen and (max-width: 1200px) {
     padding: 4rem 1rem;
   }
+  @media screen and (max-width: 360px) {
+    padding: 3rem 0.2rem;
+  }
+
   .footer_inner {
     display: flex;
     justify-content: space-between;
@@ -27,6 +31,10 @@ footer {
     @media screen and (max-width: 750px) {
       display: grid;
       grid-template-columns: 40% 40%;
+      gap: 2rem;
+    }
+    @media screen and (max-width: 360px) {
+      width: 88%;
       gap: 2rem;
     }
     p {
@@ -45,10 +53,27 @@ footer {
         width: 7rem;
         height: 7rem;
       }
+
+      .logo_quotes {
+        p {
+          @media screen and (max-width: 380px) {
+            width: 110%;
+          }
+        }
+      }
     }
 
     .footer_details {
+      @media screen and (max-width: 360px) {
+        width: 70%;
+      }
+
       &_inner {
+        width: 100%;
+
+        @media screen and (max-width: 360px) {
+          width: 6.5rem;
+        }
         .header_sec {
           h4 {
             font-family: Poppins;
@@ -66,9 +91,15 @@ footer {
             border: 1px solid $btn-secondary;
             background: $white;
           }
+          @media screen and (max-width: 360px) {
+            width: 100%;
+          }
         }
 
         .footer_items {
+          @media screen and (max-width: 360px) {
+            width: 100%;
+          }
           ul {
             display: grid;
             gap: 1rem;
@@ -100,10 +131,18 @@ footer {
             @media screen and (max-width: 1200px) {
               width: 100%;
             }
+
             input {
               width: 12rem;
               padding-left: 0.5rem;
               height: 3rem;
+              border: none;
+              outline: none;
+
+              @media screen and (max-width: 590px) {
+                width: 100%;
+              }
+
               &::placeholder {
                 font-family: Poppins;
                 font-size: 13px;
@@ -124,8 +163,12 @@ footer {
               background: $primary;
               z-index: 100;
               cursor: pointer;
+              border: none;
               @media screen and (max-width: 750px) {
-                width: 100%;
+                width: 40%;
+              }
+              @media screen and (max-width: 360px) {
+                display: none;
               }
 
               img {
@@ -144,6 +187,11 @@ footer {
       width: 95%;
       border: 1px solid #777777;
       margin-block: 5rem 1rem;
+
+      @media screen and (max-width: 360px) {
+        width: 80%;
+        margin: 1rem;
+      }
     }
 
     &_footer_text {
@@ -154,6 +202,11 @@ footer {
       font-weight: 400;
       line-height: 23px;
       letter-spacing: 0em;
+
+      @media screen and (max-width: 360px) {
+        width: 80%;
+        margin: 1rem;
+      }
     }
   }
 }

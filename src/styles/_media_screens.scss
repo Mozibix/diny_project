@@ -67,7 +67,7 @@
   .stories_inner {
     .stories_quotes {
       p {
-        padding: 0 5rem;
+        padding: 0 4rem;
       }
     }
   }
@@ -75,7 +75,7 @@
   .instructors_inner {
     .quotes {
       p {
-        padding: 0 5rem;
+        padding: 0 4rem;
       }
     }
 
@@ -323,21 +323,27 @@
     .stories_header {
       margin-top: 2rem;
       h4 {
-        font-size: 30px;
-        text-align: left;
-        margin-inline-start: 9.5rem;
+        // font-size: 30px;
+        // text-align: left;
+        // margin-inline-start: 1.5rem;
       }
     }
 
     .stories_img_sec_inner {
-      position: relative;
-      justify-content: start;
-      inset: 0 8rem;
+      // position: relative;
+      // justify-content: start;
+      // inset: 0 8rem;
     }
   }
 
   //
   .instructors_inner {
+    .quotes {
+      p {
+        padding: 0 1rem;
+      }
+    }
+
     h4 {
       font-size: 30px;
     }
@@ -427,6 +433,29 @@
   }
 }
 @media screen and (max-width: 425px) {
+  .contact_inner {
+    .form_sec {
+      form {
+        .top_form {
+          grid-template-columns: 18rem;
+          gap: 0.5rem;
+          input {
+            width: 100%;
+          }
+        }
+
+        .bottom_form {
+          input {
+            width: 19rem;
+            position: relative;
+            inset: 0 0.6rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
   .nav {
     nav {
       .items {
@@ -450,6 +479,28 @@
         .right_top_nav {
           gap: 1rem;
         }
+      }
+    }
+  }
+
+  //
+  .stories_inner {
+    .stories_quotes {
+      p {
+        padding: 0 0.1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .instructors_inner {
+    h4 {
+      font-size: 25px;
+    }
+    .quotes {
+      p {
+        padding: 0 0rem;
       }
     }
   }

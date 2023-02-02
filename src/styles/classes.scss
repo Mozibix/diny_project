@@ -12,6 +12,11 @@
 
 .classes {
   margin: 10rem 0;
+
+  @media screen and (max-width: 768px) {
+    margin: 1rem 0;
+  }
+
   &_inner {
     background: $classes_bg;
     text-align: center;
@@ -44,6 +49,9 @@
         justify-content: center;
         align-items: center;
 
+        @media screen and (max-width: 1023px) {
+          display: none;
+        }
         .inner_green {
           background: $bold_primary;
           border-radius: 50%;
@@ -64,6 +72,10 @@
         justify-content: center;
         align-items: center;
         gap: 2rem;
+        @media screen and (max-width: 813px) {
+          display: grid;
+          gap: 1rem;
+        }
         .class_box {
           background: $white;
           width: 20rem;
@@ -80,6 +92,10 @@
               gap: 3rem;
               margin: 1rem 0;
               color: $list_items;
+
+              @media screen and (max-width: 932px) {
+                gap: 0.5rem;
+              }
 
               .flex {
                 display: flex;
@@ -135,6 +151,10 @@
         text-align: center;
         margin-top: 5rem;
         font-family: Poppins;
+
+        @media screen and (max-width: 768px) {
+          margin-top: 2rem;
+        }
       }
     }
   }

@@ -30,13 +30,11 @@ export const MoreAbout = () => {
                   </li>
                   <li>
                     <img src={checkbox} alt="checkbox" />{" "}
-                    <p> We have built hospitals,</p>
-                    arranged doctor.
+                    <p> We have built hospitals, arranged doctor.</p>
                   </li>
                   <li>
                     <img src={checkbox} alt="checkbox" />{" "}
-                    <p> We have built hospitals,</p>
-                    arranged doctor.
+                    <p> We have built hospitals, arranged doctor.</p>
                   </li>
                 </ul>
               </div>

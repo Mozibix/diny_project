@@ -14,14 +14,23 @@
   background: $primary;
   mix-blend-mode: normal;
   opacity: 0.86;
-  overflow: hidden;
   height: 98vh;
+  overflow: hidden;
+  margin-bottom: 8rem;
+
+  @media screen and (max-width: 875px) {
+    height: 165vh;
+  }
+
   img {
     height: 100vh;
     width: 100%;
     z-index: -5;
     opacity: 0.3;
     mix-blend-mode: normal;
+    @media screen and (max-width: 875px) {
+      height: 170vh;
+    }
   }
   &_inner {
     position: absolute;

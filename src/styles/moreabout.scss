@@ -17,6 +17,16 @@
     align-items: center;
     gap: 2rem;
     padding: 7rem 0 0 15rem;
+    @media screen and (max-width: 1100px) {
+      padding: 7rem 0 0 10%;
+    }
+    @media screen and (max-width: 768px) {
+      padding-left: 20%;
+    }
+    @media screen and (max-width: 635px) {
+      padding-left: 5%;
+    }
+
     .more_about {
       &_left {
         &_inner {
@@ -29,16 +39,29 @@
               line-height: 46px;
               letter-spacing: 0em;
               text-align: left;
+
+              @media screen and (max-width: 480px) {
+                width: 100%;
+                line-height: 36px;
+                font-size: 28px;
+              }
+              @media screen and (max-width: 360px) {
+                font-size: 20px;
+              }
             }
           }
 
           .light_text {
             p {
               width: 23rem;
+              @media screen and (max-width: 480px) {
+                width: 95%;
+              }
             }
           }
           .list_items {
             ul {
+              width: 100%;
               li {
                 font-family: Lato;
                 font-size: 16px;
@@ -50,6 +73,12 @@
                 display: flex;
                 align-items: center;
                 gap: 0.5rem;
+
+                p {
+                  @media screen and (max-width: 360px) {
+                    width: 100%;
+                  }
+                }
               }
             }
           }
